@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Useful links  | Remiel</title>
+<link rel="shortcut icon" href="https://blog.changli.tech//favicon.ico?v=1607136493239">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.changli.tech//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Useful links  | Remiel - Atom Feed" href="https://blog.changli.tech//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1.sussed
+2.secure.esc
+3.SVE
+4.FindBooks
+5.movies&amp;teleplay
+6.recordings of courses
+7.Latex table
+8.PostCode2Address
+9..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.changli.tech/">
+  <img class="avatar" src="https://blog.changli.tech//images/avatar.png?v=1607136493239" alt="">
+  </a>
+  <h1 class="site-title">
+    Remiel
+  </h1>
+  <p class="site-description">
+    单纯的比比叨叨
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/MisakaLee" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/MisakaLee" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Useful links 
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-01-03
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><a href="https://sussed.soton.ac.uk/">1.sussed</a></p>
+<p><a href="https://secure.ecs.soton.ac.uk/">2.secure.esc</a></p>
+<p><a href="https://vdi.soton.ac.uk/portal/webclient/index.html#/">3.SVE</a></p>
+<p><a href="https://libgen.is">4.FindBooks</a></p>
+<p><a href="https://duonaolive.com/">5.movies&amp;teleplay</a></p>
+<p><a href="https://www.panopto.com/features/integration/blackboard/">6.recordings of courses</a></p>
+<p><a href="http://www.tablesgenerator.com/#">7.Latex table</a></p>
+<p><a href="https://www.royalmail.com/find-a-postcode">8.PostCode2Address</a></p>
+<p><a href="https://paxful.com/">9.PAXFUL</a></p>
+<p><a href="https://sotonproduction.service-now.com/soton/it.do">10.KnowledgeBase</a></p>
+<p><a href="magi.com">11.Magi</a></p>
+<p><a href="https://www.sq688.com/">12.SQmusic</a></p>
+<p><a href="https://cn.overleaf.com/login">13.Latex</a></p>
+<p><a href="https://online.visual-paradigm.com/cn/diagrams/features/gantt-chart-tool/">14.Gantt Chart</a></p>
+<p><a href="https://sleele.com/2019/05/12/aria2-trackers/">15.Bit track</a></p>
+<p><a href="https://aideadlin.es/?sub=ML,CV,NLP">16. Deadline of AI conferences</a></p>
+<p><a href="https://www.aminer.cn/ranks/conf?category_type=ccf&amp;category=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&amp;category_en=Artificial%20Intelligence">17. AI conferences</a></p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  转载请联系：misakalee@vip.qq.com
+  <a class="rss" href="https://blog.changli.tech//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

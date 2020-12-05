@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.changli.tech/</id>
+    <title>Remiel</title>
+    <updated>2020-12-05T02:48:16.229Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.changli.tech/"/>
+    <link rel="self" href="https://blog.changli.tech/atom.xml"/>
+    <subtitle>单纯的比比叨叨</subtitle>
+    <logo>https://blog.changli.tech/images/avatar.png</logo>
+    <icon>https://blog.changli.tech/favicon.ico</icon>
+    <rights>All rights reserved 2020, Remiel</rights>
+    <entry>
+        <title type="html"><![CDATA[Useful links ]]></title>
+        <id>https://blog.changli.tech/post/useful-links/</id>
+        <link href="https://blog.changli.tech/post/useful-links/">
+        </link>
+        <updated>2020-01-03T10:52:25.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://sussed.soton.ac.uk/">1.sussed</a></p>
+<p><a href="https://secure.ecs.soton.ac.uk/">2.secure.esc</a></p>
+<p><a href="https://vdi.soton.ac.uk/portal/webclient/index.html#/">3.SVE</a></p>
+<p><a href="https://libgen.is">4.FindBooks</a></p>
+<p><a href="https://duonaolive.com/">5.movies&amp;teleplay</a></p>
+<p><a href="https://www.panopto.com/features/integration/blackboard/">6.recordings of courses</a></p>
+<p><a href="http://www.tablesgenerator.com/#">7.Latex table</a></p>
+<p><a href="https://www.royalmail.com/find-a-postcode">8.PostCode2Address</a></p>
+<p><a href="https://paxful.com/">9.PAXFUL</a></p>
+<p><a href="https://sotonproduction.service-now.com/soton/it.do">10.KnowledgeBase</a></p>
+<p><a href="magi.com">11.Magi</a></p>
+<p><a href="https://www.sq688.com/">12.SQmusic</a></p>
+<p><a href="https://cn.overleaf.com/login">13.Latex</a></p>
+<p><a href="https://online.visual-paradigm.com/cn/diagrams/features/gantt-chart-tool/">14.Gantt Chart</a></p>
+<p><a href="https://sleele.com/2019/05/12/aria2-trackers/">15.Bit track</a></p>
+<p><a href="https://aideadlin.es/?sub=ML,CV,NLP">16. Deadline of AI conferences</a></p>
+<p><a href="https://www.aminer.cn/ranks/conf?category_type=ccf&amp;category=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&amp;category_en=Artificial%20Intelligence">17. AI conferences</a></p>
+]]></content>
+    </entry>
+</feed>
