@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.changli.tech/</id>
     <title>Remiel</title>
-    <updated>2020-12-05T03:36:37.689Z</updated>
+    <updated>2020-12-05T12:53:14.088Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.changli.tech/"/>
     <link rel="self" href="https://blog.changli.tech/atom.xml"/>
@@ -10,45 +10,6 @@
     <logo>https://blog.changli.tech/images/avatar.png</logo>
     <icon>https://blog.changli.tech/favicon.ico</icon>
     <rights>All rights reserved 2020, Remiel</rights>
-    <entry>
-        <title type="html"><![CDATA[基于Debian搭建NAS]]></title>
-        <id>https://blog.changli.tech/post/ji-yu-ubuntu-da-jian-nas/</id>
-        <link href="https://blog.changli.tech/post/ji-yu-ubuntu-da-jian-nas/">
-        </link>
-        <updated>2020-05-23T17:17:05.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="0-配置国内源加速">0 配置国内源加速</h1>
-<p>磨刀不误砍柴工，先配置好软件库加速可以很大节省后面操作的时间<br>
-<a href="https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/">Ubuntu 20.04 LTS 清华源加速</a><br>
-其他的系统也可以直接搜索对应系统+清华源找到，链接的左侧也有提供</p>
-<h1 id="1-安装管理面板">1 安装管理面板</h1>
-<p>这里选择cockpit和webmin一起使用，网上很多文章说cockpit轻量级功能孱弱。但是基本是基于没有任何插件的Ubuntu版本。本来我一开始也以为Ubuntu版本没办法用一些管理LVM之类的功能，后来CentOS上有点问题不得不换回Ubuntu，仔细研究发现只需要安装一些对应的包就能开启cockpit的功能。</p>
-<pre><code>sudo apt-get install xfsprogs #安装xfs文件系统支持
-sudo apt-get install udisks2-lvm2 lvm2 #安装lvm支持
-sudo apt-get install cockpit cockpit-storaged #安装cockpit和storage模块
-sudo systemctl start cockpit #启动cockpit
-</code></pre>
-<p>cockpit还有cockpit-machines管理虚拟机模块，以及<a href="https://github.com/enira/cockpit-smb-plugin">samba管理模块</a><br>
-安装完成之后就可以使用<code>https://IP:9090</code>访问cockpit了<br>
-webmin在各个系统下的安装就都有教程，不再赘述</p>
-<h1 id="2-docker安装与加速">2 Docker安装与加速</h1>
-<h2 id="docker安装">Docker安装</h2>
-<p>使用docker的原因就是除了一些基础应用之外不希望自己的服务器变得很脏，同时也能规避一些使用上的不方便。<br>
-这里安装直接使用<a href="https://mirror.tuna.tsinghua.edu.cn/help/docker-ce/">清华开源镜像</a>的教程，然后安装docker-compose，这个是可以将一系列容器按照一定方式组织起来，我主要是方便迁移，把所有应用放在各自的文件夹下，然后建立一个docker-compose的文件，如果系统出现问题可以直接按照前面的步骤安装完成，然后配置好加速之后运行docker-compose来获得和原来一致的应用。</p>
-<pre><code>sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose #下载docker-compose文件
-sudo chmod +x /usr/local/bin/docker-compose #添加执行权限
-</code></pre>
-<p>然后可以使用</p>
-<pre><code>docker-compose --version #确认安装情况
-docker-compose up -d #后台启动
-
-
-
-
-</code></pre>
-<h2 id="docker-加速">Docker 加速</h2>
-<p>这里使用<a href="https://mirrors.ustc.edu.cn/help/dockerhub.html?highlight=docker">中科大的镜像站</a>教程</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Useful links ]]></title>
         <id>https://blog.changli.tech/post/useful-links/</id>
