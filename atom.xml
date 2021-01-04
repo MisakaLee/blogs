@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.changli.tech/</id>
     <title>Remiel</title>
-    <updated>2020-12-28T10:02:07.349Z</updated>
+    <updated>2021-01-04T10:01:35.206Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.changli.tech/"/>
     <link rel="self" href="https://blog.changli.tech/atom.xml"/>
     <subtitle>单纯的比比叨叨</subtitle>
     <logo>https://blog.changli.tech/images/avatar.png</logo>
     <icon>https://blog.changli.tech/favicon.ico</icon>
-    <rights>All rights reserved 2020, Remiel</rights>
+    <rights>All rights reserved 2021, Remiel</rights>
     <entry>
         <title type="html"><![CDATA[Useful links ]]></title>
         <id>https://blog.changli.tech/post/useful-links/</id>
@@ -36,6 +36,7 @@
 <p><a href="https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/">18. IEEE templates</a></p>
 <p><a href="http://zwfw.cscse.edu.cn/">19. 学位认证</a></p>
 <p><a href="https://mc.manuscriptcentral.com/sensors">20. IEEE Sensors</a></p>
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">21. 非官方Windows二进制python包</a></p>
 <h1 id="资源搜索">资源搜索</h1>
 <p><a href="https://www.jiumodiary.com">21. 鸠摩搜索</a></p>
 ]]></content>
