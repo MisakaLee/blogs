@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.changli.tech/</id>
     <title>Remiel</title>
-    <updated>2021-04-16T02:23:07.983Z</updated>
+    <updated>2021-04-16T02:27:31.539Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.changli.tech/"/>
     <link rel="self" href="https://blog.changli.tech/atom.xml"/>
@@ -43,6 +43,7 @@
 <pre><code>CUDA_VISIBLE_DEVICES=1 python run_qa.py --model_name_or_path bert-base-uncased --dataset_name squad --do_train --do_eval --per_device_train_batch_size 12 --learning_rate 3e-5 --num_train_epochs 2 --max_seq_length 384 --doc_stride 128 --output_dir /tmp/debug_squad/
 </code></pre>
 <p>即为仅有第二张卡对此程序可见，也可指定多张卡，使用,分割。</p>
+<p>此前使用此脚本实测，单卡T4 16G运行需要192分钟，单卡V100 32G运行需要76分钟。</p>
 ]]></content>
     </entry>
     <entry>
