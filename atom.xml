@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.changli.tech/</id>
     <title>Remiel</title>
-    <updated>2021-01-07T01:24:51.970Z</updated>
+    <updated>2021-04-16T02:23:07.983Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.changli.tech/"/>
     <link rel="self" href="https://blog.changli.tech/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://blog.changli.tech/images/avatar.png</logo>
     <icon>https://blog.changli.tech/favicon.ico</icon>
     <rights>All rights reserved 2021, Remiel</rights>
+    <entry>
+        <title type="html"><![CDATA[显卡深度学习性能测试（NLP）]]></title>
+        <id>https://blog.changli.tech/post/xian-qia-shen-du-xue-xi-xing-neng-ce-shi-nlp/</id>
+        <link href="https://blog.changli.tech/post/xian-qia-shen-du-xue-xi-xing-neng-ce-shi-nlp/">
+        </link>
+        <updated>2021-04-16T02:01:56.000Z</updated>
+        <content type="html"><![CDATA[<p>本文使用huggingface提供的QA脚本进行基准测试（在测试中发现V100性能与宣称有差别）<br>
+新建一个conda的虚拟环境并进入后<br>
+首先安装pytorch，这里请在<a href="https://pytorch.org/get-started/previous-versions/">pytorch安装</a>中寻找对应cuda版本的命令进行安装<br>
+然后使用如下命令安装transformers和datasets</p>
+<pre><code>pip install transformers datasets
+</code></pre>
+<p>最后使用如下命令拉取对应transformers版本的脚本（以4.5.0为例）</p>
+<pre><code>git clone --branch v4.5.0 https://github.com/huggingface/transformers.git
+</code></pre>
+<p>全部安装完成之后可进入/transformers/examples/question-answering/目录下，</p>
+<pre><code>python run_qa.py --model_name_or_path bert-base-uncased --dataset_name squad --do_train --do_eval --per_device_train_batch_size 12 --learning_rate 3e-5 --num_train_epochs 2 --max_seq_length 384 --doc_stride 128 --output_dir /tmp/debug_squad/
+</code></pre>
+<p>此处output_dir可改为自己的目录。<br>
+如果出现raw.githubusercontent.com无法连接，可以修改hosts或者拉取datasets的脚本，并在dataset_name中修改为相应目录下squad.py。例如我在run_qa.py当前目录下使用</p>
+<pre><code>git clone https://github.com/huggingface/datasets.git
+</code></pre>
+<p>拉取dataset之后，此处应修改为./datasets/datasets/squad/squad.py<br>
+同时，在run_qa.py的540行（V4.5.0）</p>
+<pre><code>metric = load_metric(&quot;squad_v2&quot; if data_args.version_2_with_negative else &quot;squad&quot;)
+</code></pre>
+<p>也要做对应修改，由于此处我仅使用squad1.1进行评测，可以直接修改else后的squad为./datasets/metrics/squad/squad.py<br>
+如果不同则需要在metrics中自己寻找合适的metrics<br>
+最后如果有多卡但只需要评测单卡性能，可以使用CUDA_VISIBLE_DEVICES放在python前面进行选择。<br>
+例如</p>
+<pre><code>CUDA_VISIBLE_DEVICES=1 python run_qa.py --model_name_or_path bert-base-uncased --dataset_name squad --do_train --do_eval --per_device_train_batch_size 12 --learning_rate 3e-5 --num_train_epochs 2 --max_seq_length 384 --doc_stride 128 --output_dir /tmp/debug_squad/
+</code></pre>
+<p>即为仅有第二张卡对此程序可见，也可指定多张卡，使用,分割。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Useful links ]]></title>
         <id>https://blog.changli.tech/post/useful-links/</id>
