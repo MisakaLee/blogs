@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.changli.tech/</id>
     <title>Remiel</title>
-    <updated>2021-04-16T02:27:31.539Z</updated>
+    <updated>2021-04-26T01:46:41.788Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.changli.tech/"/>
     <link rel="self" href="https://blog.changli.tech/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://blog.changli.tech/images/avatar.png</logo>
     <icon>https://blog.changli.tech/favicon.ico</icon>
     <rights>All rights reserved 2021, Remiel</rights>
+    <entry>
+        <title type="html"><![CDATA[向日葵在macOS下无法点击和使用键盘]]></title>
+        <id>https://blog.changli.tech/post/xiang-ri-kui-zai-macos-xia-wu-fa-dian-ji-he-shi-yong-jian-pan/</id>
+        <link href="https://blog.changli.tech/post/xiang-ri-kui-zai-macos-xia-wu-fa-dian-ji-he-shi-yong-jian-pan/">
+        </link>
+        <updated>2021-04-26T01:45:16.000Z</updated>
+        <content type="html"><![CDATA[<p>基础操作这里就不多说了，查看官方的说明：《如何远程控制 Mac OS 10.14 或更高版本》</p>
+<p></p>
+<p>和官方的图片对比一下就会发现，官方的图里多了一个SunloginClient_Desktop应用，这个会不会是不能点击的原因呢？</p>
+<p>首先正常配置，在系统偏好设置 - 安全性与隐私内，将屏幕录制、文件和文件夹、完全的磁盘访问权限、辅助功能全部都加入向日葵客户端</p>
+<p>那么SunloginClient_Desktop应用怎么来呢？先点击解锁按钮后，再点击左下角的加号，进行选择程序</p>
+<p>通过打开的文件访达，使用command + shift + G快捷键，输入 /Applications/SunloginClient.app/Contents/Helpers/SunloginClient_Desktop，找到它，并点击打开</p>
+<p></p>
+<p>确保向日葵和该程序均选中后，点按锁按钮以进行更改<br>
+————————————————<br>
+版权声明：本文为CSDN博主「投篮」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>
+原文链接：https://blog.csdn.net/Ericios/article/details/114081072</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[显卡深度学习性能测试（NLP）]]></title>
         <id>https://blog.changli.tech/post/xian-qia-shen-du-xue-xi-xing-neng-ce-shi-nlp/</id>
